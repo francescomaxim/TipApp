@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip App</title>
+    <link href="style.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="medifun">
+        <div class="vali main">
+            <div>
+                <h1>Payment</h1>
+                <div class="vali">
+                    <h2>YOUR BILL: </h2>
+                    <input type="number" id="myNumber" placeholder="Enter your bill">
+                </div>
+            </div>
+
+            <div>
+                <div class="vali">
+                    <div class="button vali" id="francesco" onclick="selectButton(this)" data-tip="15">15%<br>Good</div>
+                    <div class="button vali" onclick="selectButton(this)" data-tip="18">18%<br>Great</div>
+                </div>
+                <div class="vali">
+                    <div class="button vali" onclick="selectButton(this)" data-tip="20">20%<br>Wow!</div>
+                    <div class="button vali" onclick="selectButton(this)" data-tip="30">30%<br>Best Service Ever!</div>
+                </div>
+                <div class="vali">
+                    <div class="button vali" onclick="selectButton(this)" data-tip="0">No Tip<br>:(</div>
+                    <div class="button vali" onclick="selectButton(this)" id="boss">
+                        <input type="number" id="customTip" placeholder="Custom Tip %" onclick="selectButton()">
+                    </div>
+                </div>
+                <div class="vali">
+                    <button onclick="calculateTips()">Calculate</button>
+                    <button onclick="clearFields()">Clear</button>
+                </div>
+            </div>
+
+            <div class="vali main">
+                <p id="billDisplay">Your Bill: </p>
+                <p id="tipDisplay">Your Tip: </p>
+                <p id="finalDisplay">Final: </p>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <h1>Who's Paying?(Random)</h1>
+
+            <input type="text" id="personName" placeholder="Enter person's name">
+            <button onclick="addPerson()">Add Person</button>
+    
+            <ul id="personList" class="person-list">
+                <!-- Lista de persoane -->
+            </ul>
+
+            <button onclick="selectRandomPerson()">Select Random Person</button>
+            <button onclick="clearPersonList()">Clear Person List</button>
+
+            <h2 id="winnerDisplay">Selected Person: No one yet</h2>
+
+        </div>
+
+    </div>
+
+    <script src="country-list.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

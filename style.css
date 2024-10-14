@@ -1,0 +1,143 @@
+*{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 16px;
+
+    background-color: #334045;
+    color:whitesmoke;
+}
+
+.medifun{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    margin: 1%;
+    background-color: transparent;
+    border: 2px solid whitesmoke;
+}
+
+p{
+    font-size: 1.6rem;
+}
+
+.container > button{
+    width: 200px;
+    height: 50px;
+}
+
+button:hover{
+    background-color: whitesmoke;
+    color: #334045;
+    border: 1px solid rgb(30, 28, 28);
+}
+
+.button{
+    width: 220px;
+    height: 80px;
+    margin: 1%;
+    background-color: transparent;
+    border: 2px solid whitesmoke;
+}
+
+.button:hover{
+    background-color: whitesmoke;
+    color: #334045;
+    border: 1px solid rgb(30, 28, 28);
+}
+
+.button.selected{
+    background-color: whitesmoke;
+    color: #334045;
+    border: 1px solid rgb(30, 28, 28);
+}
+
+.main{
+    flex-direction: column;
+}
+
+.vali{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.voli{
+    flex-direction: row;
+}
+
+input[type="number"]::-webkit-outer-spin-button, 
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.container{
+    margin-bottom: 100px;
+}
+
+h1 {
+    text-align: center;
+    margin: 2%;
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 1.7rem;
+    margin: 10px;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.person-list {
+    list-style-type: none;
+}
+
+.person-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    margin: 10px;
+}
+
+.remove-btn {
+    background-color: #d9534f;
+    border: none;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.remove-btn:hover {
+    background-color: whitesmoke;
+}
